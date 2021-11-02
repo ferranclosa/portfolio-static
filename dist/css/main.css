@@ -68,7 +68,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url(../img/ferran.png);
+  background: url(../img/ferran_guaperas.jfif);
   border-radius: 50%;
   border: solid 3px #eece1a;
 }
@@ -114,6 +114,8 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -124,7 +126,7 @@ li {
 body {
   background: #444;
   color: #fff;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -308,7 +310,7 @@ main#home h1 {
 }
 
 .cards {
-  height: 100vh;
+  height: 65vh;
   overflow: hidden;
   margin: 0;
 }
@@ -325,16 +327,17 @@ main#home h1 {
   flex: 0.3;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in-out;
+  transition: flex 0.4s ease-in-out;
 }
 
 .cards-panel h3 {
   position: absolute;
   background-color: black;
+  min-width: 30px;
   border-radius: 5px;
   padding: 5px 15px;
   justify-content: center;
-  bottom: 30px;
+  bottom: 45px;
   writing-mode: vertical-rl;
 }
 
@@ -347,6 +350,55 @@ main#home h1 {
   writing-mode: horizontal-tb;
 }
 
+@media (max-width: 600px) {
+  .cards {
+    height: 100%;
+    margin: 0;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .cards-panel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100vw;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.2 0 50px;
+    margin: 7px;
+    position: relative;
+    transition: flex 0.4s ease-in-out;
+  }
+
+  .cards-panel h3 {
+    position: absolute;
+    background: none;
+    color: black;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    writing-mode: horizontal-tb;
+  }
+
+  .cards-panel.active {
+    flex: 5;
+  }
+
+  .cards-panel.active h3 {
+    color: white;
+    position: absolute;
+    font-weight: bolder;
+    top: 5px;
+    left: 60%;
+  }
+}
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr);
@@ -389,7 +441,7 @@ div.menu-branding.show {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../img/ferran.jpg");
+    background: url("../img/ferran_guaperas.jfif");
     width: 150px;
     height: 150px;
   }

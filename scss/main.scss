@@ -2,17 +2,21 @@
 @import "menu";
 
 * {
+  margin: 0;
+  padding: 0; 
+
   box-sizing: border-box;
 }
 
 li {
   list-style-type: none;
 }
+
 body {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -205,7 +209,7 @@ main {
 }
 
 .cards {
-  height: 100vh;
+  height: 65vh;
   overflow: hidden;
   margin: 0;
  
@@ -215,9 +219,6 @@ main {
 
 }
 .cards-panel {
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
   background: no-repeat center center/cover;
   height: 60vh;
   border-radius: 50px;
@@ -225,7 +226,7 @@ main {
   flex: 0.3;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in-out;
+  transition: flex 0.4s ease-in-out;
 }
 .cards-panel h3 {
   position: absolute;
@@ -233,10 +234,9 @@ main {
   border-radius: 05px;
   padding: 5px 15px; 
   justify-content: center;
-  
   bottom: 30px;
   writing-mode: vertical-rl;
-  // transition: writing-mode 1.0s ease-in-out;
+ 
 }
 .cards-panel.active{
   flex: 5; 
@@ -247,5 +247,86 @@ main {
   writing-mode: horizontal-tb;
  
 }
+
+@media (max-width: 600px) {
+  .cards {
+      height: 100%;
+      margin: 0;
+      
+  }
+  .cards-container {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100%;
+  }
+  .cards-panel {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      width: 100vw;
+      border-radius: 50px;
+      cursor: pointer;
+      flex: 0.2 0 50px;
+      margin: 7px;
+      position: relative;
+      transition: flex 0.4s ease-in-out;
+  }
+  .cards-panel h3 {
+      position: absolute;
+      background: none ;
+      color: black; 
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+      writing-mode: horizontal-tb;
+  }
+  .cards-panel.active {
+      flex: 5;
+  }
+  .cards-panel.active h3 {
+      color: white; 
+      position: absolute; 
+      font-weight: bolder;
+      top: 5px; 
+      left:60%; 
+  }
+}
+
+// @media  (max-width:480px) {
+//   p {
+//     font-size: 1.1rem; 
+//     line-height: 1.3rem;
+//     text-align: justify;
+//   }
+//   .portrait {
+//     display: none; 
+//   }
+//   .lg-heading h1 {
+//     font-weight: 300;
+//     font-size: 3rem;
+//   }
+//   .sm-heading {
+//     display: none; 
+//   }
+//   .about-info .bio h3{
+//     display: none; 
+//   }
+//   .cards-container {
+//     display: flex;
+//     flex-direction: column; 
+//     overflow-y: 
+//   }
+//   // .cards-panel{
+//   //   width: 100vw;
+//   // }
+//   // .cards-panel h3{
+//   //   position: absolute; 
+//   //   top: 50%; 
+    
+//   // }
   
+// }
+
 @import "mobile";
