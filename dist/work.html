@@ -2,132 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/main.css">
-  <title>View My Work</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Projects</title>
 </head>
 
 <body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div> 
-      <div class="btn-line"></div>
+    <header>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div> 
+          <div class="btn-line"></div>
+        </div>
+    
+        <nav class="menu">
+          <div class="menu-branding">
+            <div class="portrait"></div>
+          </div>
+          <ul class="menu-nav">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                Person
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="goal.html" class="nav-link">
+                Vision
+              </a>
+            </li>
+    
+            <li class="nav-itemc current">
+              <a href="work.html" class="nav-link">
+                Achievements
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">
+                Reach
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <div class="cards">
+        <div class="cards-container">
+            <div class="cards-panel active" style="background-image: url('./img/Paris.jpg')">
+                <h3>Paris 2003</h3>
+            </div>
+            <div class="cards-panel" style="background-image: url('./img/Athens.jpg')">
+                <h3>Athens 2002</h3>
+            </div>
+            <div class="cards-panel " style="background-image: url('./img/Malta.jpg')">
+                <h3>Malta 2000</h3>
+            </div>
+            <div class="cards-panel" style="background-image: url('./img/Istambul.jpg')">
+                <h3>Istambul 1998</h3>
+            </div>
+            <div class="cards-panel" style="background-image: url('./img/London.jpg')">
+                <h3>London 1993</h3>
+            </div>
+            <div class="cards-panel" style=
+            "background-image: url('./img/Barcelona.jpg')">
+                <h3>Barcelona 1992</h3>
+            </div>
+            <div class="cards-panel" style=
+            "background-image: url('./img/Orchestra.jpg')">
+                <h3>Sabadell 1985</h3>
+            </div>
+        </div>
     </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item ">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            Person
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a href="goal.html" class="nav-link">
-            Vision
-          </a>
-        </li>
-
-        <li class="nav-itemc current">
-          <a href="work.html" class="nav-link">
-            Achievements
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Reach
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="work">
-    <h1 class="lg-heading">
-      My
-      <span class="text-secondary">Work</span>
-    </h1>
-    <h2 class="sm-heading">
-      Check out some of my projects...
-    </h2>
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/Istambul.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Istambul, Turkey
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/Athens.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Athens, Greece
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/London.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> London, UK
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/Malta.jpg" alt="Project">
-        </a>
-        
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Valetta, Malta
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div>
-      <!-- <div class="item">
-        <a href="#!">
-          <img src="img/projects/project5.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fab fa-github"></i> Github
-        </a>
-      </div> -->
-    </div>
-  </main>
-
-  <footer id="main-footer">
-    Copyright &copy; 2021
-  </footer>
-
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

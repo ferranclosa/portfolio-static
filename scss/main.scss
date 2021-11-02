@@ -1,5 +1,5 @@
-@import 'config';
-@import 'menu';
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -81,9 +81,9 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3'
-    'job4 job5 job6';
+    "bioimage bio bio"
+    "job1 job2 job3"
+    "job4 job5 job6";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -204,4 +204,48 @@ main {
   height: 60px;
 }
 
-@import 'mobile';
+.cards {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+ 
+}
+.cards-container {
+  display: flex;
+
+}
+.cards-panel {
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  background: no-repeat center center/cover;
+  height: 60vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.3;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in-out;
+}
+.cards-panel h3 {
+  position: absolute;
+  background-color: black;
+  border-radius: 05px;
+  padding: 5px 15px; 
+  justify-content: center;
+  
+  bottom: 30px;
+  writing-mode: vertical-rl;
+  // transition: writing-mode 1.0s ease-in-out;
+}
+.cards-panel.active{
+  flex: 5; 
+}
+
+.cards-panel.active h3{
+  opacity: 1; 
+  writing-mode: horizontal-tb;
+ 
+}
+  
+@import "mobile";

@@ -5,6 +5,7 @@ const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 
+
 // Set Initial State Of Menu
 let showMenu = false;
 
@@ -31,3 +32,22 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+const panels = document.querySelectorAll('.cards-panel')
+
+panels.forEach ((one) =>{
+  console.log(one)
+  one.addEventListener('click', () => {
+    removeActiveClasses()
+    one.classList.add('active')
+  }
+  )
+ 
+})
+
+function removeActiveClasses () {
+  panels.forEach((panel) => {
+    panel.classList.remove('active')
+  })
+}
+
