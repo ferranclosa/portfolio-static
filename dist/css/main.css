@@ -333,11 +333,10 @@ main#home h1 {
 .cards-panel h3 {
   position: absolute;
   background-color: black;
-  min-width: 30px;
   border-radius: 5px;
   padding: 5px 15px;
   justify-content: center;
-  bottom: 45px;
+  bottom: 30px;
   writing-mode: vertical-rl;
 }
 
@@ -397,6 +396,26 @@ main#home h1 {
     font-weight: bolder;
     top: 5px;
     left: 60%;
+  }
+}
+.grow {
+  text-align: center;
+  justify-content: center;
+  animation: grow-animation 4s linear ease-in-out;
+}
+
+@keyframes grow-animation {
+  0% {
+    font-size: 1rem;
+  }
+  33% {
+    font-size: 1.75rem;
+  }
+  66% {
+    font-size: 3.25rem;
+  }
+  100% {
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 1171px) {
