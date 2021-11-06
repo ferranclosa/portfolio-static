@@ -208,6 +208,23 @@ main {
   height: 60px;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  .icons{
+    flex: 0, 0 30%;
+  }
+  .welcome{
+    
+    flex: 1, 0 , 70%;
+    font-size: 3rem; 
+  }
+  
+  p{
+    width:60vw; 
+  }
+}
+
 .cards {
   height: 65vh;
   overflow: hidden;

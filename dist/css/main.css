@@ -309,6 +309,21 @@ main#home h1 {
   height: 60px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .icons {
+  flex: 0, 0 30%;
+}
+.container .welcome {
+  flex: 1, 0, 70%;
+  font-size: 3rem;
+}
+.container p {
+  width: 60vw;
+}
+
 .cards {
   height: 65vh;
   overflow: hidden;
