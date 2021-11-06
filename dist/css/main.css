@@ -49,7 +49,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: #131c26;
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -58,7 +58,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: #444;
+  background: #1c2837;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -70,7 +70,7 @@
   height: 250px;
   background: url(../img/ferran_guaperas.jfif);
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px #fcc62d;
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -80,7 +80,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: #eece1a;
+  color: #fcc62d;
 }
 .menu .nav-link {
   display: inline-block;
@@ -94,7 +94,7 @@
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: #eece1a;
+  color: #fcc62d;
 }
 
 .nav-item:nth-child(1) {
@@ -124,7 +124,7 @@ li {
 }
 
 body {
-  background: #444;
+  background: #1c2837;
   color: #fff;
   height: 100vh;
   margin: 0;
@@ -132,7 +132,7 @@ body {
   line-height: 1.5;
 }
 body#bg-img {
-  background: url(../img/background.jpg);
+  background: url("../img/Color logo with background.svg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -144,7 +144,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(68, 68, 68, 0.9);
+  background: rgba(28, 40, 55, 0.9);
 }
 
 h1,
@@ -163,7 +163,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
+  background: rgba(31, 45, 62, 0.5);
 }
 
 a {
@@ -178,7 +178,7 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #fcc62d;
 }
 
 main {
@@ -193,7 +193,7 @@ main .icons a {
   transition: all 0.5s ease-out;
 }
 main .icons a:hover {
-  color: #eece1a;
+  color: #fcc62d;
 }
 main#home {
   overflow: hidden;
@@ -212,7 +212,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: #fcc62d 3px solid;
 }
 .about-info .bio {
   grid-area: bio;
@@ -237,9 +237,9 @@ main#home h1 {
   grid-area: job6;
 }
 .about-info .job {
-  background: #515151;
+  background: #253448;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: #fcc62d 5px solid;
 }
 
 .projects {
@@ -253,7 +253,7 @@ main#home h1 {
 }
 .projects img:hover {
   opacity: 0.5;
-  border-color: #eece1a;
+  border-color: #fcc62d;
   transition: all 0.5s ease-out;
 }
 
@@ -273,7 +273,7 @@ main#home h1 {
 }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #eece1a;
+  background: #fcc62d;
   color: #000;
 }
 .boxes div:hover span {
@@ -287,7 +287,7 @@ main#home h1 {
   margin-bottom: 0.3rem;
 }
 .btn:hover, .btn-light:hover, .btn-dark:hover {
-  background: #eece1a;
+  background: #fcc62d;
   color: #000;
 }
 
@@ -297,14 +297,14 @@ main#home h1 {
 }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #8da6c5;
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #0b0f15;
   color: #fff;
   height: 60px;
 }
