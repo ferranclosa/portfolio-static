@@ -7,7 +7,7 @@ $secondary-dark: #1c2837;
 $show-home-image: true;
 $home-image: url('../img/Color logo with background.svg');
 $background-opacity: 0.9;
-$portrait-image: url('../img/ferran_guaperas.jfif');
+$portrait-image: url('../img/Ferran_guaperas.jfif') center center/cover;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
