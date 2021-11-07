@@ -32,7 +32,6 @@ h3 {
   &.lg-heading {
     font-size: 6rem;
   }
-
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -208,20 +207,19 @@ main {
   height: 60px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: space-between;
-  .icons{
+  .icons {
     flex: 0, 0 30%;
   }
-  .welcome{
-    
-    flex: 1, 0 , 70%;
-    font-size: 3rem; 
+  .welcome {
+    flex: 1, 0, 70%;
+    font-size: 3rem;
   }
-  
-  p{
-    width:60vw; 
+
+  p {
+    width: 60vw;
   }
 }
 
@@ -230,9 +228,11 @@ main {
   overflow: hidden;
   margin: 0;
 }
+
 .cards-container {
   display: flex;
 }
+
 .cards-panel {
   background: no-repeat center center/cover;
   height: 60vh;
@@ -262,6 +262,9 @@ main {
 }
 
 @media (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
   .cards {
     height: 100%;
     margin: 0;
@@ -306,13 +309,26 @@ main {
   }
 }
 
+@media (min-width: 500) {
+  .hidden {
+    display: none;
+  }
+}
+@media (max-width: 500) {
+  .hidden {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem;
   }
+
   main #home h1 {
     margin-top: 10vh;
   }
+
   main .lg-heading {
     margin-top: 1rem;
     font-size: 5rem;
@@ -325,61 +341,5 @@ main {
     display: none;
   }
 }
-
-.grow {
-  // width: 100px;
-  text-align: center;
-  justify-content: center;
-  animation: grow-animation 4s linear ease-in-out;
-}
-
-@keyframes grow-animation {
-  0% {
-    font-size: 1rem;
-  }
-  33% {
-    font-size: 1.75rem;
-  }
-  66% {
-    font-size: 3.25rem;
-  }
-  100% {
-    font-size: 6rem;
-  }
-}
-// @media  (max-width:480px) {
-//   p {
-//     font-size: 1.1rem;
-//     line-height: 1.3rem;
-//     text-align: justify;
-//   }
-//   .portrait {
-//     display: none;
-//   }
-//   .lg-heading h1 {
-//     font-weight: 300;
-//     font-size: 3rem;
-//   }
-//   .sm-heading {
-//     display: none;
-//   }
-//   .about-info .bio h3{
-//     display: none;
-//   }
-//   .cards-container {
-//     display: flex;
-//     flex-direction: column;
-//     overflow-y:
-//   }
-//   // .cards-panel{
-//   //   width: 100vw;
-//   // }
-//   // .cards-panel h3{
-//   //   position: absolute;
-//   //   top: 50%;
-
-//   // }
-
-// }
 
 @import "mobile";

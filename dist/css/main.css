@@ -68,7 +68,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url(../img/ferran_guaperas.jfif);
+  background: url(url("../img/ferran_guaperas.jfif"));
   border-radius: 50%;
   border: solid 3px #fcc62d;
 }
@@ -365,6 +365,10 @@ main#home h1 {
 }
 
 @media (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+
   .cards {
     height: 100%;
     margin: 0;
@@ -413,6 +417,16 @@ main#home h1 {
     left: 60%;
   }
 }
+@media (min-width: 500) {
+  .hidden {
+    display: none;
+  }
+}
+@media (max-width: 500) {
+  .hidden {
+    display: block;
+  }
+}
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem;
@@ -433,26 +447,6 @@ main#home h1 {
 
   .welcome {
     display: none;
-  }
-}
-.grow {
-  text-align: center;
-  justify-content: center;
-  animation: grow-animation 4s linear ease-in-out;
-}
-
-@keyframes grow-animation {
-  0% {
-    font-size: 1rem;
-  }
-  33% {
-    font-size: 1.75rem;
-  }
-  66% {
-    font-size: 3.25rem;
-  }
-  100% {
-    font-size: 6rem;
   }
 }
 @media screen and (min-width: 1171px) {
