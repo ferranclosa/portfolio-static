@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./scss:./dist/css",
-    "deploy": "gh-pages -d dist",
-    "start": "http-server "
+    "deploy": "gh-pages -d dist/",
+    "start": "http-server dist/en/index.html"
   },
   "author": "Ferran Closa",
   "license": "MIT",
